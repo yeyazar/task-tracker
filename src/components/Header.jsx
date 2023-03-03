@@ -3,7 +3,7 @@
 const Header = () => {
   return (
     <div>
-      <h1 className="">Task Bar</h1>
+      <h1 className="text-danger">Task Bar</h1>
     </div>
   );
 };
