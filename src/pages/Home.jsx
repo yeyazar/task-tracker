@@ -13,7 +13,7 @@ const Home = () => {
 
   return (
     <div className="text-center p-5 bg-warning d-flex justify-content-center">
-      <div className="p-5 border border-primary d-flex flex-column w-50">
+      <div className="p-5 border bg-light border-primary d-flex flex-column w-50">
         <Header />
         <Button showClose={showClose} addTask={addTask} />
         {addTask && <AddTask />}
