@@ -1,9 +1,12 @@
-import React from 'react'
 
-const Button = () => {
+
+const Button = ({ showClose, addTask }) => {
   return (
-    <div>Button</div>
-  )
-}
+    <div>
+      {addTask && <button onClick={() => showClose()}>Close Add Task Bar</button>}
+      {!addTask && <button onClick={() => showClose()}>Show Add Task Bar</button>}
+    </div>
+  );
+};
 
-export default Button
+export default Button;

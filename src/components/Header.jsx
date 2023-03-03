@@ -1,11 +1,9 @@
-import Button from "./Button";
-import React from "react";
+
 
 const Header = () => {
   return (
     <div>
-      Header
-      <Button />
+      <h1 className="">Task Bar</h1>
     </div>
   );
 };

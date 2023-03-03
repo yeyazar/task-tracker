@@ -1,8 +1,11 @@
-import React from 'react'
+
 
 const AddTask = () => {
   return (
-    <div>AddTask</div>
+    <div>
+      Add Task Bar
+      <form action=""></form>
+    </div>
   )
 }
 

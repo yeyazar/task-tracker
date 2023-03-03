@@ -1,14 +1,21 @@
-import React from "react";
+import { useState } from "react";
 import AddTask from "../components/AddTask";
+import Button from "../components/Button";
 import Header from "../components/Header";
 import Tasks from "../components/Tasks";
 
 const Home = () => {
+  const [addTask, setAddTask] = useState(false);
+
+  const showClose = () => {
+    setAddTask(!addTask);
+  };
+
   return (
-    <div className="container text-center">
-      Home
+    <div className="d-flex">
       <Header />
-      <AddTask />
+      <Button showClose={showClose} addTask={addTask} />
+      {addTask && <AddTask />}
       <Tasks />
     </div>
   );
